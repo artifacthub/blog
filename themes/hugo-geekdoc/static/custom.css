@@ -110,6 +110,10 @@ code {
   align-items: center;
 }
 
+.gdoc-brand__suffix {
+  padding-left: 0.5rem;
+}
+
 .gdoc-brand__badge-content {
   position: relative;
   bottom: -1px;
