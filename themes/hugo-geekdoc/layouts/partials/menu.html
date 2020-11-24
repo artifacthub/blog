@@ -3,15 +3,6 @@
     {{ $root := "/" }}
 
     <section class="gdoc-nav--main">
-        <ul class="gdoc-nav__list">
-            <li>
-                <span class="flex">
-                    <a href="{{ $root }}" class="gdoc-nav__entry gdoc-nav__entry-root {{ if eq $root .RelPermalink }}is-active{{ end }}">
-                        Welcome
-                    </a>
-                </span>
-            </li>
-        </ul>
         {{ if .Site.Params.GeekdocMenuBundle }}
             {{ partial "menu-bundle" (dict "current" . "source" .Site.Data.menu.main.main) }}
         {{ else }}

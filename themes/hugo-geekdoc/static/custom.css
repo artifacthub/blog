@@ -335,3 +335,55 @@ ul ul .gdoc-nav__item, .gdoc-nav__entry-root {
 #menu-control:checked ~ main .gdoc-nav nav, #menu-control:checked ~ main .gdoc-page {
   transform: translateX(20rem);
 }
+
+nav[role=pagination] ul {
+  justify-content: center !important;
+}
+
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: .25rem;
+}
+
+a.page-link {
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #659dbd;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+a.page-link {
+  text-decoration: none;
+}
+
+.page-item:first-child .page-link {
+  margin-left: 0;
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
+
+.page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: auto;
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+  background-color: #659dbd;
+  border-color: #dee2e6;
+  z-index: 3;
+  color: #fff;
+}
+
+.page-item:last-child .page-link {
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}

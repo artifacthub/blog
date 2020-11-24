@@ -1,0 +1,16 @@
+{{ define "main" }}
+    <main aria-role="main">
+      <div>
+        <article class="gdoc-markdown">
+        {{ range (.Paginate .Site.RegularPages).Pages }}
+        <h1><a href="{{ .Permalink }}">{{ partial "title" . }}</a></h1>
+            {{ .Summary }}
+        {{ end }}
+        </article>
+      </div>
+    </main>
+
+    <nav role="pagination">
+        {{ template "_internal/pagination.html" . }}
+    </nav>
+{{ end }}
