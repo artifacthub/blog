@@ -1,0 +1,13 @@
+baseURL: "https://blog.artifacthub.io/"
+languageCode: "en-us"
+title: "Artifact Hub Blog"
+theme: "hugo-geekdoc"
+
+params:
+  quicklinks:
+    - title: Artifact Hub
+      url: https://artifacthub.io
+    - title: Documentation
+      url: https://artifacthub.io/docs/
+    - title: API docs
+      url: https://artifacthub.github.io/hub/api/

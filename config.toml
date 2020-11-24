@@ -1,4 +1,0 @@
-baseURL = "https://blog.artifacthub.io/"
-languageCode = "en-us"
-title = "Artifact Hub Blog"
-theme = "hugo-geekdoc"
