@@ -1,0 +1,8 @@
+{{- if .Params.author }}
+    {{- if .Params.authorLink }}
+        By <a href="{{ .Params.authorLink }}">{{ .Params.author }}</a>
+    {{- else }}
+        By {{ .Params.author }}
+    {{- end }} on {{ end }}
+{{ $dateFormat := default "January 2, 2006" .Site.Params.GeekdocDateFormat }}
+{{ .Date.Format $dateFormat }}
