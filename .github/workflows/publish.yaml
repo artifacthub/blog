@@ -1,0 +1,22 @@
+name: Publish Site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+        with:
+          submodules: true
+      - name: Publish Site
+        uses: chabad360/hugo-gh-pages@0bcf754dc6c823a580c58a59a3baa476a41258d3
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          cname: blog.artifacthub.io
+          hugoVersion: extended_v0.78.2
