@@ -19,3 +19,4 @@ jobs:
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           hugoVersion: extended_0.78.2
+          cname: blog.artifacthub.io
