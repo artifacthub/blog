@@ -502,7 +502,7 @@ img {
   color: #0a539a
 }
 .gdoc-post__readmore:after {
-  content: "\1f82a"
+  content: "»"
 }
 .gdoc-footer {
   background: #2f333e;
