@@ -20,7 +20,7 @@ The [process to prove ownership and become a verified publisher is located in th
 
 ## Official Status
 
-Official status is for repositories that ship software they also develop. Prometheus coming from the Prometheus project is an example of something that can get official status while Bitnami packaging and delivering software like WordPress is not. This isn't to say that packages from unofficial organizations can't be excellent and trustworthy. Official status is designed to help those searching for software to be able to identify packages from software developers, if they exist.
+Official status is for repositories and packages that ship software they also develop. Prometheus coming from the Prometheus project is an example of something that can get official status while Bitnami packaging and delivering software like WordPress is not. This isn't to say that packages from unofficial organizations can't be excellent and trustworthy. Official status is designed to help those searching for software to be able to identify packages from software developers, if they exist.
 
 ![Example of official repository](official.png)
 
