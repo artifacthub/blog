@@ -1,5 +1,5 @@
 ---
-title: "Embed Artifact Details In Your Site"
+title: "Embed Artifact Details On Your Site"
 date: 2021-05-18T00:00:00-05:00
 author: "Matt Farina"
 authorLink: "https://mattfarina.com"
