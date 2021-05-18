@@ -1,0 +1,11 @@
+{{ $dest := .Destination -}}
+{{ $url := urls.Parse .Destination -}}
+{{ if eq $url.Host "" -}}
+  {{ if hasPrefix $url.Path "/" -}}
+    {{ $base := strings.TrimSuffix "/" .Page.Site.BaseURL -}}
+    {{ $dest = printf "%s%s" $base .Destination -}}
+  {{ else -}}
+    {{ $dest = printf "%s%s" .Page.Permalink .Destination -}}
+  {{ end -}}
+{{ end -}}
+<img src="{{ $dest | safeURL }}" {{ with .Text }} alt="{{ . }}" {{ end }} {{ with .Title }} title="{{ . }}" {{ end }} />
