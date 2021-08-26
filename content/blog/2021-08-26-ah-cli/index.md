@@ -12,7 +12,7 @@ Artifact Hub leverages metadata stored in annotations. This metadata provides de
 
 There are two ways you can use the `ah` tool. First, you can install the binary. You can [get the binary from the releases page on GitHub or install it on Mac via Homebrew or on Windows via Scoop](https://artifacthub.io/docs/topics/cli/#install).
 
-The second way you can get `ah` is by using [the container image](https://artifacthub.io/docs/topics/cli/#docker). This container image can be using in testing tools and other automation to help catch any issues.
+The second way you can get `ah` is by using [the container image](https://artifacthub.io/docs/topics/cli/#docker). This container image can be used in testing tools and other automation to help catch any issues.
 
 ## Using ah
 
@@ -97,11 +97,11 @@ Package lint FAILED. 1 error(s) occurred:
 Error: lint failed
 ```
 
-When there is an error, `ah` exists with a non-zero exit code.
+When there is an error, `ah` exits with a non-zero exit code.
 
 ## Supported Packages
 
-Currently, `ah` only supports Helm charts. We look forward to expanding support to other tools. If you would like to help contribute to that effort, [the source is up on GitHub](https://github.com/artifacthub/hub/tree/master/cmd/ah) and we are happy to accept contributions.
+Currently, `ah` only supports Helm charts. Support for more package types is coming soon. If you would like to help contribute to that effort or otherwise expand on the features of `ah`, [the source is up on GitHub](https://github.com/artifacthub/hub/tree/master/cmd/ah) and we are happy to accept contributions.
 
 ## Conclusion
 
