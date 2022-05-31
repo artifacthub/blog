@@ -1,6 +1,6 @@
 ---
 title: "Comparing Helm Templates Between Versions"
-date: 2022-05-23T00:00:00-04:00
+date: 2022-05-31T00:00:00-04:00
 author: "Matt Farina"
 authorLink: "https://mattfarina.com"
 slug: "helm-template-compare"
